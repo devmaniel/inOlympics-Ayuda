@@ -54,7 +54,9 @@ const SignUp = () => {
 
             <div className="space-y-2">
               <Label htmlFor="lastName" className="text-[#4A5568]">Last Name</Label>
-              <Input type="text" id="lastName" placeholder="Enter last name" />
+              <Input type="text" id="lastName" placeholder="Enter last name" 
+              className="border-[#1A5F7A] focus:ring-[#2D9CDB] focus:border-[#2D9CDB]"
+              />
             </div>
 
             <div className="space-y-2">
@@ -76,7 +78,8 @@ const SignUp = () => {
             type="file"
             id="validId"
             accept="image/*"
-            className="cursor-pointer border-0 bg-transparent file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-[#2D9CDB] file:text-primary-foreground hover:file:bg-[#3182CE] focus:outliine-none focus:ring-0"
+            className="cursor-pointer border-0 bg-transparent file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 
+            file:text-sm file:font-semibold file:bg-[#2D9CDB] file:text-primary-foreground hover:file:bg-[#3182CE] focus:outliine-none focus:ring-0"
           />
         </div>
 
