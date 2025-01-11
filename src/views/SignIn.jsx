@@ -1,6 +1,7 @@
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
   return (
@@ -30,6 +31,17 @@ const SignIn = () => {
         <Button type="submit" className="w-full bg-[#1A5F7A] hover:bg-[#2D9CDB] text-white">
           Sign In
         </Button>
+        <div className="mt-4 text-center">
+  <p className="text-[#4A5568]">
+    Don't have an account?{" "}
+    <Link 
+      to="/sign_up" 
+      className="text-[#2D9CDB] hover:text-[#1A5F7A] font-semibold"
+    >
+      Sign up here
+    </Link>
+  </p>
+</div>
       </form>
     </div>
   );

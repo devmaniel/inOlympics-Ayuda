@@ -1,6 +1,7 @@
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   return (
@@ -86,6 +87,17 @@ const SignUp = () => {
         <Button type="submit" className="w-full bg-[#1A5F7A] hover:bg-[#2D9CDB] text-white">
           Sign Up
         </Button>
+        <div className="mt-4 text-center">
+  <p className="text-[#4A5568]">
+    Already have an account?{" "}
+    <Link 
+      to="/sign_in" 
+      className="text-[#2D9CDB] hover:text-[#1A5F7A] font-semibold"
+    >
+      Sign in here
+    </Link>
+  </p>
+</div>
       </form>
     </div>
   );
