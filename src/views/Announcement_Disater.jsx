@@ -1,22 +1,26 @@
 import React from "react";
 
+import Navbar from "./partials/Navbar";
+import Footer from "./partials/Footer";
+
 const Announcement_Disaster = () => {
   return (
     <>
-      <div className="container mx-auto h-full max-w-4xl">
+      <Navbar />
+      <div className="container h-full max-w-4xl mx-auto">
         {/* Card Container */}
-        <div className="bg-white shadow-md h-screen overflow-hidden">
+        <div className="h-screen overflow-hidden bg-white shadow-md">
           {/* Banner Image */}
           <img
             src="https://files01.pna.gov.ph/category-list/2021/04/03/dswd-fb-ayuda2.jpg"
             alt="Banner"
-            className="w-full h-48 object-cover"
+            className="object-cover w-full h-48"
           />
 
           {/* Content Section */}
           <div className="p-6">
             {/* Title */}
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            <h1 className="mb-4 text-4xl font-bold text-gray-900">
               Title Announcement
             </h1>
 
@@ -42,10 +46,10 @@ const Announcement_Disaster = () => {
 
             {/* Description */}
             <div className="description">
-              <h1 className="text-2xl font-bold text-gray-900 mb-4 mt-4">
+              <h1 className="mt-4 mb-4 text-2xl font-bold text-gray-900">
                 Descriptions
               </h1>
-              <p className="text-gray-700 mb-6">
+              <p className="mb-6 text-gray-700">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Corporis impedit, temporibus omnis rerum similique quisquam
                 reprehenderit incidunt explicabo, enim tempore sed minus aut
@@ -54,24 +58,24 @@ const Announcement_Disaster = () => {
             </div>
 
             <div className="description">
-              <h1 className="text-lg font-bold text-gray-900 mb-4 mt-4">
+              <h1 className="mt-4 mb-4 text-lg font-bold text-gray-900">
                 Locations: One Ayala Mall Easy
               </h1>
             </div>
 
             {/* Table Section */}
             <div className="table-schedule">
-              <h1 className="text-xl font-bold text-gray-900 mb-4 mt-4">
+              <h1 className="mt-4 mb-4 text-xl font-bold text-gray-900">
                 Schedule
               </h1>
 
-              <h2 className="text-lg font-semibold text-gray-700 mb-2">
+              <h2 className="mb-2 text-lg font-semibold text-gray-700">
                 Day 1:
               </h2>
 
               {/* Table */}
-              <div className="overflow-x-auto mx-3">
-                <table className="min-w-full bg-white border border-gray-200 text-sm text-left">
+              <div className="mx-3 overflow-x-auto">
+                <table className="min-w-full text-sm text-left bg-white border border-gray-200">
                   <thead className="bg-gray-100">
                     <tr>
                       <th className="px-4 py-2 border-b border-gray-200">
@@ -107,6 +111,8 @@ const Announcement_Disaster = () => {
           </div>
         </div>
       </div>
+
+      <Navbar />
     </>
   );
 };

@@ -1,5 +1,8 @@
 import React from "react";
 
+import Navbar from "./partials/Navbar";
+import Footer from "./partials/Footer";
+
 const History = () => {
   // Mock data for demonstration
   const ayudaData = {
@@ -19,58 +22,62 @@ const History = () => {
   };
 
   return (
-    <div className="container mx-auto h-full max-w-4xl ">
-      {/* Card Container */}
-      <div className="bg-white shadow-md  overflow-hidden">
-        <h1 className="text-4xl mx-5 mt-5 font-bold text-gray-900 mb-4">
-          History
-        </h1>
+    <>
+      <Navbar />
+      <div className="container h-full max-w-4xl mx-auto mt-5 mb-5 ">
+        {/* Card Container */}
+        <div className="overflow-hidden bg-white shadow-md">
+          <h1 className="mx-5 mt-5 mb-4 text-4xl font-bold text-gray-900">
+            History
+          </h1>
 
-        <hr />
+          <hr />
 
-        {/* Content Section */}
-        <div className="p-6 ">
-          <div>
-            {/* Title */}
-            <h1 className="text-2xl font-bold text-gray-900 mb-4">
-              {ayudaData.title}
-            </h1>
+          {/* Content Section */}
+          <div className="p-6 ">
+            <div>
+              {/* Title */}
+              <h1 className="mb-4 text-2xl font-bold text-gray-900">
+                {ayudaData.title}
+              </h1>
 
-            {/* Location */}
-            <p className="text-gray-600 mb-2">
-              <span className="font-semibold">Location: </span>
-              {ayudaData.location}
-            </p>
+              {/* Location */}
+              <p className="mb-2 text-gray-600">
+                <span className="font-semibold">Location: </span>
+                {ayudaData.location}
+              </p>
 
-            {/* Status */}
-            <p className="mb-4">
-              <span className="font-semibold">Status: </span>
-              <span
-                className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${
-                  statusLabelColors[ayudaData.status]
-                }`}
-              >
-                {ayudaData.status}
-              </span>
-            </p>
+              {/* Status */}
+              <p className="mb-4">
+                <span className="font-semibold">Status: </span>
+                <span
+                  className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${
+                    statusLabelColors[ayudaData.status]
+                  }`}
+                >
+                  {ayudaData.status}
+                </span>
+              </p>
 
-            {/* Description */}
-            <p className="text-gray-600 mb-4">
-              <span className="font-semibold">Description of Goods: </span>
-              {ayudaData.description}
-            </p>
+              {/* Description */}
+              <p className="mb-4 text-gray-600">
+                <span className="font-semibold">Description of Goods: </span>
+                {ayudaData.description}
+              </p>
 
-            {/* Date */}
-            <p className="text-gray-600">
-              <span className="font-semibold">Date: </span>
-              {ayudaData.date}
-            </p>
+              {/* Date */}
+              <p className="text-gray-600">
+                <span className="font-semibold">Date: </span>
+                {ayudaData.date}
+              </p>
 
-            <hr className="mt-4" />
+              <hr className="mt-4" />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 

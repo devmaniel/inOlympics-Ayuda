@@ -1,16 +1,19 @@
 import React from "react";
 
+import Navbar from "./partials/Navbar";
+import Footer from "./partials/Footer";
 const Announcement_Content = () => {
   return (
     <>
-      <div className="container mx-auto h-full max-w-4xl ">
+      <Navbar />
+      <div className="container h-full max-w-4xl mx-auto font-ranade ">
         {/* Card Container */}
-        <div className="bg-white shadow-md h-screen overflow-hidden">
+        <div className="h-screen overflow-hidden bg-white shadow-md">
           {/* Banner Image */}
           <img
             src="https://files01.pna.gov.ph/category-list/2021/04/03/dswd-fb-ayuda2.jpg"
             alt="Banner"
-            className="w-full h-48 object-cover"
+            className="object-cover w-full h-48"
           />
 
           {/* Content Section */}
@@ -18,13 +21,13 @@ const Announcement_Content = () => {
             {/* User Info */}
 
             {/* Title */}
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            <h1 className="mb-4 text-4xl font-bold text-gray-900">
               Title Announcement
             </h1>
 
             {/* Badge */}
             <div className="mb-4">
-              <span className="inline-block px-3 py-1 text-xs font-semibold text-blue-700 bg-blue-100 rounded-full">
+              <span className="inline-block px-3 py-1 text-xs font-semibold text-blue-600 bg-blue-100 rounded-full">
                 Cash Assistance
               </span>
             </div>
@@ -43,11 +46,11 @@ const Announcement_Content = () => {
             {/* Description */}
 
             <div className="description">
-              <h1 className="text-2xl font-bold text-gray-900 mb-4 mt-4">
+              <h1 className="mt-4 mb-4 text-2xl font-bold text-gray-900">
                 Descriptions
               </h1>
 
-              <p className="text-gray-700 mb-6">
+              <p className="mb-6 text-gray-700">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Corporis impedit, temporibus omnis rerum similique quisquam
                 reprehenderit incidunt explicabo, enim tempore sed minus aut
@@ -59,13 +62,13 @@ const Announcement_Content = () => {
             </div>
 
             <div className="description">
-              <h1 className="text-lg font-bold text-gray-900 mb-4 mt-4">
+              <h1 className="mt-4 mb-4 text-lg font-bold text-gray-900">
                 Locations: One Ayala Mall Easy
               </h1>
             </div>
 
             <div className="description">
-              <h1 className="text-xl font-bold text-gray-900 mb-4 mt-4">
+              <h1 className="mt-4 mb-4 text-xl font-bold text-gray-900">
                 Requirements
               </h1>
 
@@ -76,6 +79,8 @@ const Announcement_Content = () => {
           </div>
         </div>
       </div>
+
+      <Navbar />
     </>
   );
 };
