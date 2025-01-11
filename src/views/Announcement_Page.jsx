@@ -2,37 +2,58 @@ import React from "react";
 
 const Announcement_Page = () => {
   return (
-    <>
-      <div className="container mx-auto   py-10">
-        {/* Parent Grid Container */}
-        <div className="grid grid-cols-1  md:grid-cols-3 lg:grid-cols-5 grid-rows-5 gap-4 md:gap-2 lg:gap-0 h-[500px]">
-          {/* Div 1 */}
-          <div className="col-span-1 md:col-start-1 md:col-end-2 row-span-1 md:row-start-1 md:row-end-4 bg-blue-500 p-4">
-            Div 1
+    <div className="container mx-auto max-w-xl px-4 py-8">
+      {/* Card Container */}
+      <div className="bg-white shadow-md rounded-lg overflow-hidden">
+        {/* Banner Image */}
+        <img
+          src="https://files01.pna.gov.ph/category-list/2021/04/03/dswd-fb-ayuda2.jpg"
+          alt="Banner"
+          className="w-full h-48 object-cover"
+        />
+
+        {/* Content Section */}
+        <div className="p-6">
+          {/* User Info */}
+          <div className="flex items-center gap-2 mb-4">
+            <p className="text-xs font-medium text-gray-700">Posted by</p>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/58/Bini_Billboard_K_POWER_100_%282%29_%28cropped%29.jpg"
+              alt="Avatar"
+              className="w-5 h-5 rounded-full"
+            />
+            <p className="text-xs font-medium text-gray-700">SK John Doe</p>
           </div>
 
-          {/* Div 2 */}
-          <div className="col-span-1 md:col-start-2 md:col-end-3 row-span-1 md:row-start-1 md:row-end-4 bg-green-500 p-4">
-            Div 2
+          {/* Title */}
+          <h1 className="text-2xl font-bold text-gray-900 mb-4">
+            Title Announcement
+          </h1>
+
+          {/* Badge */}
+          <div className="mb-4">
+            <span className="inline-block px-3 py-1 text-xs font-semibold text-blue-700 bg-blue-100 rounded-full">
+              Cash Assistance
+            </span>
           </div>
 
-          {/* Div 3 */}
-          <div className="col-span-1 md:col-start-3 md:col-end-4 row-span-1 md:row-start-1 md:row-end-2 bg-red-500 p-4">
-            Div 3
-          </div>
+          {/* Description */}
+          <p className="text-gray-700 mb-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed magnam
+            dicta omnis aliquid veniam sequi et repellendus accusantium tempora
+            a?
+          </p>
 
-          {/* Div 4 */}
-          <div className="col-span-1 md:col-start-3 md:col-end-4 row-span-1 md:row-start-2 md:row-end-3 bg-yellow-500 p-4">
-            Div 4
-          </div>
-
-          {/* Div 5 */}
-          <div className="col-span-1 md:col-start-3 md:col-end-4 row-span-1 md:row-start-3 md:row-end-4 bg-purple-500 p-4">
-            Div 5
-          </div>
+          {/* Read More Link */}
+          <a
+            href="#"
+            className="text-sm font-medium text-blue-600 hover:underline"
+          >
+            Read More
+          </a>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
